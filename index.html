@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--Amirhosseinrashidy-->
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Amirhosseinrashidy</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <script>
+    window.console = window.console || function(t) {};
+    window.open = function(){ console.log('window.open is disabled.'); };
+    window.print = function(){ console.log('window.print is disabled.'); };
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+
+		<form class="form">
+			<input type="text" placeholder="Username" />
+			<input type="password" placeholder="Password" />
+			<button type="submit" id="login-button">Login</button>
+		</form>
+	</div>
+
+	<!--- for more background effect, just  delete this comment line, thank you
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	
+	-->
+</div>
+
+  <script src='js/jquery.js'></script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+  <script src="js/timeout.js"></script>
+  <script>
+    $('#login-button').click(function (event) {
+    event.preventDefault();
+    $('form').fadeOut(800);
+    $('.wrapper').addClass('form-success');
+});
+
+  </script>
+
+</body>
+
+</html>
